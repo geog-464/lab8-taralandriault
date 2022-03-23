@@ -1,44 +1,42 @@
 /* CSS Document */
 
-/*cute google fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
 body {
 	/* these are variables in CSS. Not everyone uses them, but they make quick changes much faster */
-	--main-bkg-color: #000;
-	--bkg-color1: #8CCDFF;	
-	--bkg-color2: #548fbb;
-	--bkg-color3: #8089FF;
-	--nav-title-color: #364d4d;
-	--main-text-color: #364d4d;
-	--link-color: #363EB3;
+	--main-bkg-color: #FF7F50;
+	--bkg-color1: #D3D3D3;	
+	--bkg-color2: #D8BFD8;
+	--bkg-color3: #FFA07A;
+	--nav-title-color: #FFE4B5;
+	--main-text-color: #737373;
+	--link-color: #737373;
 	--tag-color: #7dbfd3;
 	--hover-color: black;
 	--hover-bg-color: pink;
 	--selection-color: yellow;
 	
 	--map-selection-color: #ed8266;
-	--font-multiplier: 1.2;
+	--font-multiplier: 1.6;
 	--content-gap: 1em;
 	--item-gap: 0.2em;
 	--default-item-color: rgb(200,200,200);
 	--navheight: 10vh;
 	
 	background-color: var(--main-bkg-color);
-    box-sizing: border-box;
-    z-index: 1;
-    margin: auto 0; 
+   	box-sizing: border-box;
+    	z-index: 1;
+    	margin: auto 0; 
 	height: 100%;
 	font-size: 16px;
 	overflow: hidden;
 }
 
 h1 {
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Times New Roman", Times, serif;
 	color: var(--nav-title-color);
-	font-size: 30px;
+	font-size: 50px;
 	font-weight: bold;
-	margin: 0px 0px 0px 0px;
+	margin: auto;
 	text-align: center;
 	line-height: normal;
 }
@@ -50,7 +48,7 @@ h3 {
 h4 {
 }
 p {
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Times New Roman", Times, serif;
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1em);
 	font-weight: regular;
@@ -58,17 +56,6 @@ p {
 }
 
 button {
-}
-
-footer {
-  	height: 60px;
-    width: 80%;
-	font-weight: bold;
-    text-align: left;
-    position: absolute;
-    bottom: 0px;
-    left: 0px; 
-	padding: 15px;
 }
 
 /* main */
@@ -190,49 +177,8 @@ h3 > .highlight {
 	width: 100%;
 	/*position: absolute;*/
 	left: 0px;
-    z-index: 1;
+      z-index: 1;
 	border-top-right-radius: 20px;
-}
-
-/* nav */
-
-ul.navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-	display: block;
-	height: calc(var(--navheight));
-}
-
-.li-nav {
-    float: right;
-}
-
-li {
-	font-family: 'Roboto Mono', monospace;
-	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1em);
-	font-weight: regular;
-	padding: 0px 0px 0px 0px;
-}
-
-.navbar li a {
-	font-family: 'Roboto Mono', monospace;
-    display: block;
-    color: var(--link-color);
-    text-decoration: none;
-	padding: calc(var(--navheight)/4);
-	height: calc(var(--navheight)/2);
-}
-
-a {
-	color: var(--link-color);
-}
-
-a:hover {
-    background-color: var(--hover-bg-color);
-	color:  var(--hover-color);
 }
 
 #title {
@@ -251,29 +197,63 @@ a:hover {
 /** scrollbar **/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Times New Roman", Times, serif;
   color: rgb(200,200,200);
   font-size: calc(var(--font-multiplier) * 16px);
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Times New Roman", Times, serife;
   color: rgb(200,200,200);
   font-size: calc(var(--font-multiplier) * 16px);
 }
 :-ms-input-placeholder { /* IE 10+ */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Times New Roman", Times, serif;
   color: rgb(200,200,200);
   font-size: calc(var(--font-multiplier) * 16px);
 }
 :-moz-placeholder { /* Firefox 18- */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Times New Roman", Times, serif;
   color: rgb(200,200,200);
   font-size: calc(var(--font-multiplier) * 16px);
 }
 
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #FF7F50;
+  overflow: hidden;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  gap: 5px;
+  width: 100%;
+  float: left;
+  margin-left: 10px;
 
+}
 
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left
+  color: #737373;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #FFE4B5;
+  color: #737373;
+}
+
+#signature{
+	float: left;
+	font-weight: bold;
+      font-size: 12px;
+	margin-left: 3px;
+      row-gap: 0;
+
+}
 
 
 
